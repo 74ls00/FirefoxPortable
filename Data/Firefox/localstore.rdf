@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#state"
+                   ordinal="7"
+                   sortDirection="descending" />
+  <RDF:Description RDF:about="place:folder=158&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#filterSource"
+                   ordinal="13" />
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul#siteCol"
+                   width="197" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar"
+                   style="min-width: 200px !important; width: 300px !important; max-width: 800px !important; " />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#filter"
+                   ordinal="3" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#aiosPreferences"
+                   lastSelected="aiosGeneral"
+                   screenX="131"
+                   screenY="163" />
+  <RDF:Description RDF:about="chrome://browser/content/web-panels.xul#web-panels-browser"
+                   cachedurl="http://easyelectronics.ru/rabota-v-eagle-cad-chast-4-podgotovka-k-proizvodstvu.html" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
+                   aiosVButtons="true"
+                   width="1214"
+                   height="753"
+                   aiosOpen="false"
+                   screenX="74"
+                   screenY="30"
+                   sizemode="normal" />
+  <RDF:Description RDF:about="chrome://stylish/content/manage-standalone.xul?sidebar">
+    <NC:persist RDF:resource="chrome://stylish/content/manage-standalone.xul?sidebar#styles-sort"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://httpfox/content/HttpFoxOptions.xul#hf_PrefWindow"
+                   lastSelected="hf_PrefPane" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#list"
+                   defaultSort=" " />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#aios-enableAutohide"
+                   checked="false" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentTitle"
+                   width="378" />
+  <RDF:Description RDF:about="chrome://tabmixplus/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://tabmixplus/content/preferences/preferences.xul#TabMIxPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul">
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#aiosPreferences"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#aiosPanels"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#aios-advanced"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#name"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#shortcut"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#id"/>
+    <NC:persist RDF:resource="chrome://aios/content/prefs/prefs.xul#aiosGeneral"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://fastdial/content/preferences.xul">
+    <NC:persist RDF:resource="chrome://fastdial/content/preferences.xul#fd-dialog-preferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentUrl"
+                   ordinal="5"
+                   width="16" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentLastModified"
+                   ordinal="17" />
+  <RDF:Description RDF:about="chrome://scrapbook/content/scrapbook.xul#sbTreeOuter"
+                   height="304" />
+  <RDF:Description RDF:about="chrome://maf/content/preferences/prefsDialog.xul#prefsDialog"
+                   lastSelected="paneMain" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul">
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#address"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#filter"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#type"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#state"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#size"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#docDomain"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#filterSource"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/sidebar.xul#list"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:folder=127&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#places"
+                   height="687"
+                   sizemode="normal"
+                   width="1147"
+                   screenX="31"
+                   screenY="203" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentDate"
+                   ordinal="7" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#col-slow"
+                   ordinal="5" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentVisitCount"
+                   ordinal="9" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
+                   currentset="save-page-button,find-button,ctr_back-forward-button,ctr_stop-button,ctr_reload-button,secureLoginButton,urlbar-container,search-container,webrtc-status-button,social-share-button,ctr_panelui-button,ctr_statusbar,hf_toolbarButton_HttpFox" />
+  <RDF:Description RDF:about="chrome://browser/content/devtools/framework/toolbox-window.xul#devtools-toolbox-window"
+                   screenX="244"
+                   screenY="562" />
+  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;queryType=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul#SignonViewerDialog"
+                   screenX="313"
+                   screenY="400" />
+  <RDF:Description RDF:about="chrome://global/content/printPageSetup.xul#printPageSetupDialog"
+                   screenX="24"
+                   screenY="24" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#navigator-toolbox"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#aios-toolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#aios-enableAutohide"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#ctr_addon-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#TabsToolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#ctr_extra-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#aios-sbhtoolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#status4evar-status-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#aios-toggle-toolbox"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#urlbar-container"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#search-container"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#status4evar-status-bar"
+                   collapsed="false"
+                   currentset="abp-toolbarbutton,button--2541d29a-db9e-4c1e-949a-31efb4aef4e7-proxtube-onoff,greasemonkey-tbb,customizableui-special-separator472,button--helpersavefromnet-sf-menu_button,https-everywhere-button,status4evar-status-widget,widget:jid0-ad08RZ08iNQBNTcg20ZWy84a73I@jetpack-HTTPtoHTTPS-btn,status4evar-progress-widget" />
+  <RDF:Description RDF:about="chrome://stylish/content/edit.xul#stylish"
+                   sizemode="normal"
+                   width="731"
+                   height="592"
+                   screenX="168"
+                   screenY="201" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#search-container"
+                   width="379" />
+  <RDF:Description RDF:about="place:folder=1115&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="place:folder=1134&amp;excludeItems=1&amp;excludeQueries=1&amp;excludeReadOnlyFolders=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#col-filter"
+                   ordinal="3" />
+  <RDF:Description RDF:about="place:folder=782&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
+                   currentset="menubar-items"
+                   autohide="false" />
+  <RDF:Description RDF:about="about:config#lockCol"
+                   width="89"
+                   ordinal="5" />
+  <RDF:Description RDF:about="place:beginTime=1416258000000000&amp;endTime=1416344400000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul">
+    <NC:persist RDF:resource="chrome://passwordmgr/content/passwordManager.xul#siteCol"/>
+    <NC:persist RDF:resource="chrome://passwordmgr/content/passwordManager.xul#userCol"/>
+    <NC:persist RDF:resource="chrome://passwordmgr/content/passwordManager.xul#SignonViewerDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:folder=1143&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://custombuttons/content/editor.xul#custombuttonsEditor"
+                   sizemode="normal"
+                   screenX="329"
+                   screenY="246" />
+  <RDF:Description RDF:about="place:beginTime=1415739600000000&amp;endTime=1416430800000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"
+                   width="506"
+                   height="508"
+                   screenX="235"
+                   screenY="329" />
+  <RDF:Description RDF:about="chrome://browser/content/devtools/framework/toolbox-window.xul">
+    <NC:persist RDF:resource="chrome://browser/content/devtools/framework/toolbox-window.xul#devtools-toolbox-window"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#abpFiltersWindow"
+                   width="950"
+                   height="450"
+                   sizemode="normal"
+                   screenX="17"
+                   screenY="367" />
+  <RDF:Description RDF:about="chrome://maf/content/preferences/prefsDialog.xul">
+    <NC:persist RDF:resource="chrome://maf/content/preferences/prefsDialog.xul#prefsDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://mozapps/content/handling/dialog.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/handling/dialog.xul#handling"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://stylish/content/edit.xul">
+    <NC:persist RDF:resource="chrome://stylish/content/edit.xul#stylish"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
+                   aiosInit="true"
+                   aiosLastPanel="viewDownloadsSidebar"
+                   src="about:blank"
+                   width="330"
+                   sidebarcommand="" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/composer.xul">
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/composer.xul#abp-composer"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://fastdial/content/thumbnail/properties.xul#fd-dialog-properties"
+                   screenX="431"
+                   screenY="339"
+                   lastSelected="general" />
+  <RDF:Description RDF:about="chrome://scrapbook/content/scrapbook.xul#sbSearchImage"
+                   searchtype="fulltext" />
+  <RDF:Description RDF:about="place:folder=1026&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;excludeItems=1&amp;excludeQueries=1&amp;excludeReadOnlyFolders=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#aios-toolbar"
+                   iconsize="small"
+                   currentset="bookmarks-button,downloads-button,history-button,customizableui-special-separator3,scrapbook-button,addons-button,customizableui-special-separator4,pageinfo-button,customizableui-special-spring13,disallowscriptbtn-key-dot,custombuttons-button0" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#type"
+                   ordinal="5" />
+  <RDF:Description RDF:about="chrome://classic_theme_restorer/content/options.xul#ClassicTRoptions"
+                   lastSelected="ClassicTRoptionsPane" />
+  <RDF:Description RDF:about="about:config#prefCol"
+                   width="237"
+                   ordinal="1"
+                   sortDirection="ascending" />
+  <RDF:Description RDF:about="chrome://global/content/printPageSetup.xul">
+    <NC:persist RDF:resource="chrome://global/content/printPageSetup.xul#printPageSetupDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#col-hitcount"
+                   ordinal="7" />
+  <RDF:Description RDF:about="chrome://fastdial/content/preferences.xul#fd-dialog-preferences"
+                   lastSelected="general" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+                   migratedset="disallowscriptbtn-key-dot"
+                   currentset="addonbar-closebutton" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
+                   screenX="145"
+                   screenY="308"
+                   lastSelected="paneTabs" />
+  <RDF:Description RDF:about="chrome://tabmixplus/content/preferences/preferences.xul#TabMIxPreferences"
+                   lastSelected="paneAppearance"
+                   screenX="331"
+                   screenY="243" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#size"
+                   ordinal="9" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#tabs"
+                   selectedIndex="1" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/cookies.xul#CookiesDialog"
+                   screenX="414"
+                   screenY="385"
+                   width="448"
+                   height="397" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentKeyword"
+                   ordinal="11" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:beginTime=1437080400000000&amp;endTime=1437166800000000&amp;sort=4"
+                   NC:open="true" />
+  <RDF:Description RDF:about="place:beginTime=1409342400000000&amp;endTime=1409428800000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#filtersSplitter"
+                   state="open" />
+  <RDF:Description RDF:about="chrome://firegestures/content/prefs.xul#PrefsUI"
+                   lastSelected="mappingPane"
+                   screenX="133"
+                   screenY="210" />
+  <RDF:Description RDF:about="chrome://classic_theme_restorer/content/options.xul">
+    <NC:persist RDF:resource="chrome://classic_theme_restorer/content/options.xul#ClassicTRoptions"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#ctr_extra-bar"
+                   currentset="customizableui-special-spring2"
+                   collapsed="true" />
+  <RDF:Description RDF:about="about:config">
+    <NC:persist RDF:resource="about:config#prefCol"/>
+    <NC:persist RDF:resource="about:config#lockCol"/>
+    <NC:persist RDF:resource="about:config#typeCol"/>
+    <NC:persist RDF:resource="about:config#valueCol"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul">
+    <NC:persist RDF:resource="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#col-lasthit"
+                   ordinal="9" />
+  <RDF:Description RDF:about="place:folder=1134&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
+                   currentset="tabbrowser-tabs,tabmixScrollBox,alltabs-button,new-tab-button,custombuttons-button2,tabs-closebutton" />
+  <RDF:Description RDF:about="chrome://browser/content/web-panels.xul">
+    <NC:persist RDF:resource="chrome://browser/content/web-panels.xul#web-panels-browser"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#aios-sbhtoolbar"
+                   currentset="autohide-button,paneltab-button,sidebarclose-button" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#address"
+                   ordinal="1" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/composer.xul#abp-composer"
+                   width="800"
+                   height="400"
+                   sizemode="normal"
+                   screenX="125"
+                   screenY="111" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentDescription"
+                   ordinal="13" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="Загрузки" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#name"
+                   ordinal="1" />
+  <RDF:Description RDF:about="chrome://custombuttons/content/editor.xul#custombuttons-editbutton-tabbox"
+                   selectedIndex="1" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#navigator-toolbox"
+                   iconsize="small" />
+  <RDF:Description RDF:about="chrome://securelogin/content/secureLoginOptions.xul#secureLoginPrefs"
+                   lastSelected="secureLoginPrefPaneMain" />
+  <RDF:Description RDF:about="place:folder=283&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"
+                   screenX="390"
+                   screenY="296" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#shortcut"
+                   ordinal="3" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   currentset="personal-bookmarks"
+                   collapsed="true" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/sidebar.xul#docDomain"
+                   ordinal="11" />
+  <RDF:Description RDF:about="chrome://stylish/content/manage-standalone.xul?sidebar#styles-sort"
+                   value="name" />
+  <RDF:Description RDF:about="chrome://securelogin/content/secureLoginOptions.xul">
+    <NC:persist RDF:resource="chrome://securelogin/content/secureLoginOptions.xul#secureLoginPrefs"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul">
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentTags"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentUrl"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentDate"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentVisitCount"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentKeyword"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentDescription"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentDateAdded"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentLastModified"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#places"/>
+    <NC:persist RDF:resource="chrome://browser/content/places/places.xul#placesContentTitle"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentDateAdded"
+                   ordinal="15" />
+  <RDF:Description RDF:about="place:folder=466&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#aiosPanels"
+                   seltab="4" />
+  <RDF:Description RDF:about="chrome://custombuttons/content/editor.xul">
+    <NC:persist RDF:resource="chrome://custombuttons/content/editor.xul#custombuttons-editbutton-tabbox"/>
+    <NC:persist RDF:resource="chrome://custombuttons/content/editor.xul#custombuttonsEditor"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:folder=341&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#aiosGeneral"
+                   seltab="2" />
+  <RDF:Description RDF:about="chrome://scrapbook/content/scrapbook.xul">
+    <NC:persist RDF:resource="chrome://scrapbook/content/scrapbook.xul#sbSearchImage"/>
+    <NC:persist RDF:resource="chrome://scrapbook/content/scrapbook.xul#sbTreeOuter"/>
+    <NC:persist RDF:resource="chrome://scrapbook/content/scrapbook.xul#sbNoteOuter"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#urlbar-container"
+                   width="637" />
+  <RDF:Description RDF:about="chrome://firegestures/content/prefs.xul">
+    <NC:persist RDF:resource="chrome://firegestures/content/prefs.xul#PrefsUI"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul">
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#col-enabled"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#col-filter"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#col-slow"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#col-hitcount"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#col-lasthit"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#tabs"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#abpFiltersWindow"/>
+    <NC:persist RDF:resource="chrome://adblockplus/content/ui/filters.xul#filtersSplitter"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://passwordmgr/content/passwordManager.xul#userCol"
+                   width="101" />
+  <RDF:Description RDF:about="place:folder=UNFILED_BOOKMARKS&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://fastdial/content/thumbnail/properties.xul">
+    <NC:persist RDF:resource="chrome://fastdial/content/thumbnail/properties.xul#fd-dialog-properties"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:folder=66&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://scrapbook/content/scrapbook.xul#sbNoteOuter"
+                   height="445" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#aios-toggle-toolbox"
+                   fsSwitch="false"
+                   fsToolbarMode="icons"
+                   fsToolbarIconsize="small"
+                   fsSidebar="true"
+                   fsToolbar="true"
+                   hidden="false" />
+  <RDF:Description RDF:about="chrome://browser/content/pageinfo/pageInfo.xul#main-window"
+                   height="610"
+                   sizemode="normal"
+                   width="759"
+                   screenX="384"
+                   screenY="88"
+                   seltab="4" />
+  <RDF:Description RDF:about="chrome://aios/content/prefs/prefs.xul#id"
+                   ordinal="5" />
+  <RDF:Description RDF:about="chrome://findbartweak/content/options.xul#findbartweak-options-window"
+                   screenX="19"
+                   screenY="226"
+                   lastSelected="tweaksPane" />
+  <RDF:Description RDF:about="chrome://greasemonkey/content/options.xul#greasemonkey-options-dialog"
+                   screenX="275"
+                   screenY="214" />
+  <RDF:Description RDF:about="about:config#valueCol"
+                   width="314"
+                   ordinal="3" />
+  <RDF:Description RDF:about="chrome://browser/content/places/places.xul#placesContentTags"
+                   ordinal="3"
+                   width="89" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/cookies.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/cookies.xul#CookiesDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/pageinfo/pageInfo.xul">
+    <NC:persist RDF:resource="chrome://browser/content/pageinfo/pageInfo.xul#main-window"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#ctr_addon-bar"
+                   collapsed="true"
+                   currentset="ctr_addonbar-close,custombuttons-button1,fd-button,customizableui-special-spring1,status4evar-legacy-widget" />
+  <RDF:Description RDF:about="chrome://adblockplus/content/ui/filters.xul#col-enabled"
+                   ordinal="1" />
+  <RDF:Description RDF:about="place:folder=253&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://mozapps/content/handling/dialog.xul#handling"
+                   screenX="452"
+                   screenY="298"
+                   width="376"
+                   height="398" />
+  <RDF:Description RDF:about="place:folder=242&amp;excludeItems=1&amp;excludeQueries=1&amp;excludeReadOnlyFolders=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://greasemonkey/content/options.xul">
+    <NC:persist RDF:resource="chrome://greasemonkey/content/options.xul#greasemonkey-options-dialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:folder=242&amp;excludeItems=1&amp;expandQueries=0"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://findbartweak/content/options.xul">
+    <NC:persist RDF:resource="chrome://findbartweak/content/options.xul#findbartweak-options-window"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://httpfox/content/HttpFoxOptions.xul">
+    <NC:persist RDF:resource="chrome://httpfox/content/HttpFoxOptions.xul#hf_PrefWindow"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="about:config#typeCol"
+                   ordinal="7"
+                   width="51" />
+</RDF:RDF>

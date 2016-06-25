@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Programming Arduino™ Next Steps: Going Further with Sketches</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
+<link href="stylesheet.css" type="text/css" rel="stylesheet"></link>
+
+<!-- kobo-style -->
+<link type="text/css" rel="stylesheet" href="css/kobo.css"></link>
+<script type="text/javascript" src="js/kobo.js"></script>
+<style type="text/css" id="kobostylehacks">div#book-inner p, div#book-inner div { font-size: 1.0em; } a { color: black; } a:link, a:visited, a:hover, a:active { color: blue; } div#book-inner * { margin-top: 0 !important; margin-bottom: 0 !important;}</style>
+</head>
+<body><div id="book-columns"><div id="book-inner">
+<div class="bmtitle" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.1.1">Index</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.2.1">&amp; operator</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.3.1">* (asterisk)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.4.1">; (semicolon)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.5.1">&gt;&gt; command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.6.1">[] string function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.7.1">/* and */ (block comment indicators)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.8.1">// (line comment indicator)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.9.1">1-Wire bus</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.10.1">device example</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.11.1">family codes</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.12.1">hardware connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.13.1">initializing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.14.1">master/slave concept</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.15.1">OneWire library</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.16.1">scanning</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.17.1">8N1 connection parameter</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.18.1">16-channel servo/PWM driver</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.19.1">A</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.20.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.21.1">Adafruit parts</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.22.1">ADC. </span><i><span class="koboSpan" id="kobo.23.1">See</span></i><span class="koboSpan" id="kobo.24.1"> analog-to-digital</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.25.1">converter alpha values</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.26.1">amplitude of signals</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.27.1">analog inputs</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.28.1">speeding up</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.29.1">voltage readings</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.30.1">analog outputs</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.31.1">analogRead command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.32.1">analog-to-digital converter (ADC)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.33.1">analogWrite command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.34.1">application programmer interface (API)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.35.1">Arduino</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.36.1">anatomy of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.37.1">AVR Studio software</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.38.1">brief history of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.39.1">commands</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.40.1">data types</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.41.1">devices connected to</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.42.1">explanatory overview of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.43.1">IDE installation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.44.1">libraries</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.45.1">official documentation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.46.1">power management functions</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.47.1">programming language</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.48.1">project examples</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.49.1">Serial Monitor</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.50.1">String Object library</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.51.1">tutorials</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.52.1">website</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.53.1">Arduino boards</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.54.1">analog connections on</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.55.1">batteries for powering</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.56.1">bootloaders</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.57.1">clock speed reduction</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.58.1">connections between</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.59.1">digital connections on</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.60.1">Digital Signal Processing by</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.61.1">EEPROM memory on</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.62.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.63.1">illustrated anatomy of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.64.1">keyboard and mouse emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.65.1">memory usage by</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.66.1">microcontrollers</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.67.1">pin definitions for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.68.1">power connections for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.69.1">power consumption of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.70.1">power sources for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.71.1">serial interfaces</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.72.1">sleep mode for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.73.1">SoftwareSerial pin usage</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.74.1">speed tests for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.75.1">suppliers of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.76.1">types of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.77.1">unofficial</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.78.1">uploading to</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.79.1">USB Host feature</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.80.1">Arduino Due</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.81.1">analog outputs</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.82.1">DSP</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.83.1">flash memory project</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.84.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.85.1">I2C connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.86.1">keyboard and mouse emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.87.1">microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.88.1">power consumption</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.89.1">serial interfaces</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.90.1">speed test results</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.91.1">SPI library</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.92.1">USB Host feature</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.93.1">USB ports</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.94.1">Arduino Ethernet</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.95.1">Arduino.h file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.96.1">Arduino Leonardo</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.97.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.98.1">I2C connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.99.1">keyboard and mouse emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.100.1">microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.101.1">power consumption</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.102.1">serial hardware</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.103.1">SoftwareSerial pin usage</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.104.1">speed test results</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.105.1">Arduino LilyPad</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.106.1">Arduino Mega 2560</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.107.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.108.1">I2C connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.109.1">microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.110.1">serial interfaces</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.111.1">speed test results</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.112.1">Arduino Mega ADK</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.113.1">microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.114.1">USB Host feature</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.115.1">Arduino Micro</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.116.1">Arduino Mini</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.117.1">Arduino Mini Pro</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.118.1">power consumption</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.119.1">speed test results</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.120.1">Arduino Nano</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.121.1">Arduino Playground</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.122.1">Arduino Uno</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.123.1">anatomy of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.124.1">bootloader installation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.125.1">DSP example</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.126.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.127.1">I2C connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.128.1">ICSP connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.129.1">memory</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.130.1">microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.131.1">power consumption</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.132.1">PWM output</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.133.1">serial hardware</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.134.1">SoftwareSerial pin usage</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.135.1">speed tests</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.136.1">USB Host shield</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.137.1">ArduinoISP sketch</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.138.1">arrays</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.139.1">ASCII mapping</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.140.1">AT91SAM3X8E microcontroller</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.141.1">ATmega32u4 microcontroller</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.142.1">ATmega328 microcontroller</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.143.1">EEPROM memory used in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.144.1">ports on</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.145.1">Rx and Tx pins on</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.146.1">ATmega2560 microcontroller</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.147.1">attachInterrupt command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.148.1">Audio library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.149.1">available function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.150.1">average function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.151.1">AVR Dragon programmer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.152.1">AVR processors</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.153.1">AVR Studio software</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.154.1">burning bootloaders using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.155.1">screenshot illustrating</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.156.1">avr/eeprom.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.157.1">avr/power.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.158.1">avr/sleep.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.159.1">avrdude software</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.160.1">B</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.161.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.162.1">backpack boards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.163.1">band stop filter</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.164.1">BASIC programming</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.165.1">batteries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.166.1">baud rate</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.167.1">bcd2bin function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.168.1">beginTransmission function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.169.1">bidirectional level converters</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.170.1">binary numbers</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.171.1">binary-coded decimal (BCD)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.172.1">bit banging</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.173.1">bit manipulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.174.1">binary and hex</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.175.1">masking bits</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.176.1">shifting bits</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.177.1">bits (binary digits)</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.178.1">masking and shifting</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.179.1">splitting across bytes</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.180.1">Blink sketch</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.181.1">modifying</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.182.1">selecting</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.183.1">uploading</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.184.1">boards. </span><i><span class="koboSpan" id="kobo.185.1">See</span></i><span class="koboSpan" id="kobo.186.1"> Arduino boards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.187.1">boolean data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.188.1">bootloaders</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.189.1">bypassing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.190.1">installation of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.191.1">sketch uploads and</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.192.1">buffer</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.193.1">circular</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.194.1">variable sentence</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.195.1">bumpy case</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.196.1">burning bootloaders</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.197.1">Butterworth filter</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.198.1">bytes</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.199.1">combining into ints</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.200.1">splitting bits across</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.201.1">using vs. </span><span class="koboSpan" id="kobo.201.2">int data type</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.202.1">C</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.203.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.204.1">C character arrays</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.205.1">C programming language</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.206.1">C++ programming language</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.207.1">camel case</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.208.1">Capacitive Sensing library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.209.1">central processing unit (CPU)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.210.1">CHANGE interrupt mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.211.1">char data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.212.1">character arrays</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.213.1">Circuits@home shield</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.214.1">circular buffer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.215.1">classes</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.216.1">click command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.217.1">clock speed</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.218.1">Arduino vs. </span><span class="koboSpan" id="kobo.218.2">MacBook Pro</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.219.1">reducing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.220.1">See also</span></i><span class="koboSpan" id="kobo.221.1"> speed of Arduino boards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.222.1">code</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.223.1">generating</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.224.1">optimizing</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.225.1">COM4 port</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.226.1">commands</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.227.1">Arduino</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.228.1">Serial</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.229.1">comments</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.230.1">computers</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.231.1">Arduino connected to</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.232.1">memory usage by</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.233.1">concatenating strings</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.234.1">connect function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.235.1">connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.236.1">analog</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.237.1">digital</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.238.1">network</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.239.1">const keyword</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.240.1">constant definitions</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.241.1">constant variables</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.242.1">cyclic redundancy check (CRC)</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.243.1">D</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.244.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.245.1">data array</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.246.1">data direction register D (DDRD)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.247.1">data types</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.248.1">delay command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.249.1">delayMicroseconds command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.250.1">delayPeriod variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.251.1">detachInterrupt command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.252.1">digital connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.253.1">commands for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.254.1">speeding up</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.255.1">digital inputs</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.256.1">digital outputs</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.257.1">controlling power with</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.258.1">very fast</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.259.1">Digital Signal Processing (DSP)</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.260.1">Arduino Due and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.261.1">Arduino Uno and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.262.1">averaging readings for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.263.1">filtering frequencies for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.264.1">Fourier Transform used for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.265.1">frequency measurement example of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.266.1">introductory overview of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.267.1">spectrum analyzer example of</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.268.1">digitalRead command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.269.1">digital-to-analog converter (DAC)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.270.1">digitalWrite command</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.271.1">code optimization using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.272.1">PORTD register and</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.273.1">digitization</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.274.1">display modules</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.275.1">displayGPS function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><a href="http://doctormonk.com"><span class="koboSpan" id="kobo.276.1">doctormonk.com</span></a><span class="koboSpan" id="kobo.277.1"> website</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.278.1">doSomething function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.279.1">double data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.280.1">DS18B20 temperature sensor</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.281.1">DS1307 real-time clock</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.282.1">DSP. </span><i><span class="koboSpan" id="kobo.283.1">See</span></i><span class="koboSpan" id="kobo.284.1"> Digital Signal Processing</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.285.1">Dynamic Host Configuration</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.286.1">Protocol (DHCP)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.287.1">dynamic memory allocation</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.288.1">E</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.289.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.290.1">EasyTransfer library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.291.1">EEPROM library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.292.1">EEPROM memory</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.293.1">example of using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.294.1">library functions</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.295.1">limitations of</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.296.1">emulation features</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.297.1">keyboard emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.298.1">mouse emulation</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.299.1">endTransmission function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.300.1">Ethernet library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.301.1">Ethernet Shield</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.302.1">EthernetClient</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.303.1">EthernetServer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.304.1">EtherTen board</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.305.1">examples folder</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.306.1">external interrupts</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.307.1">F</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.308.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.309.1">f.step function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.310.1">factorial function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.311.1">FALLING interrupt mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.312.1">fast digital output</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.313.1">Fast Fourier Transform (FFT)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.314.1">FFT library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.315.1">filtering process</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.316.1">filter code generation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.317.1">low-pass filter creation</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.318.1">findUntil function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.319.1">Firmata library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.320.1">fixed resistor</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.321.1">flash function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.322.1">flash memory</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.323.1">minimizing usage of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.324.1">storing data in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.325.1">See also</span></i><span class="koboSpan" id="kobo.326.1"> memory</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.327.1">float data type</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.328.1">misconception about</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.329.1">speed comparison using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.330.1">voltage measurements using</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.331.1">for command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.332.1">Fourier Transform</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.333.1">freeMemory function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.334.1">Freetronics parts</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.335.1">frequencies</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.336.1">explained</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.337.1">filtering</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.338.1">measuring</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.339.1">frequency domain</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.340.1">functions</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.341.1">EEPROM library</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.342.1">loop</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.343.1">power management</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.344.1">setup</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.345.1">SPI configuration</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.346.1">String</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.347.1">See also specific functions</span></i></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.348.1">fuses</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.349.1">G</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.350.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.351.1">GCC compiler</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.352.1">getAddress function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.353.1">getField function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.354.1">getKey function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.355.1">getModifiers function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.356.1">getOemKey function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.357.1">GFX library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.358.1">global variables</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.359.1">GND connections</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.360.1">goToSleep function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.361.1">GPS module</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.362.1">H</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.363.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.364.1">hardware</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.365.1">networking</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.366.1">serial</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.367.1">SPI bus</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.368.1">hardware interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.369.1">ISRs and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.370.1">modes for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.371.1">pins for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.372.1">pull-up resistors for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.373.1">test circuit for</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.374.1">header file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.375.1">heap</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.376.1">Hertz (Hz)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.377.1">hexadecimal values</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.378.1">HIDtoA function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.379.1">HIGH interrupt mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.380.1">highByte function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.381.1">high-pass filter</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.382.1">hitWebPage function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.383.1">Host Shield Libraries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.384.1">HTTP requests</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.385.1">Human Interface Device (HID)</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.386.1">I</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.387.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.388.1">I2C interface bus</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.389.1">device examples</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.390.1">hardware connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.391.1">initializing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.392.1">master/slave arrangement</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.393.1">sample arrangement</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.394.1">sending/receiving data</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.395.1">timing diagram</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.396.1">Wire library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.397.1">ICSP connections</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.398.1">IDE (Integrated Development Environment)</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.399.1">burning bootloaders using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.400.1">installation of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.401.1">preprocessor for</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.402.1">if statement</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.403.1">implementation file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.404.1">include statement</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.405.1">initialize function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.406.1">initializeCode function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.407.1">initializing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.408.1">1-Wire bus</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.409.1">I2C interface bus</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.410.1">.ino file extension</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.411.1">INPUT_PULLUP interrupt</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.412.1">inputs</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.413.1">analog</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.414.1">commands for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.415.1">digital</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.416.1">speeding up</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.417.1">installation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.418.1">bootloader</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.419.1">IDE</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.420.1">int data type</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.421.1">bytes used vs.</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.422.1">combining bytes into</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.423.1">storing in EEPROM</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.424.1">Integrated Development Environment. </span><i><span class="koboSpan" id="kobo.425.1">See</span></i><span class="koboSpan" id="kobo.426.1"> IDE</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.427.1">Internet of Things</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.428.1">Interrupt Service Routines (ISRs)</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.429.1">summary points about</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.430.1">volatile variables and</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.431.1">interrupts</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.432.1">enabling/disabling</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.433.1">hardware</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.434.1">ISRs and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.435.1">modes for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.436.1">pins for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.437.1">pull-up resistors for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.438.1">purpose of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.439.1">timer</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.440.1">waking on external</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.441.1">interrupts function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.442.1">IOREF connection</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.443.1">IP addresses</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.444.1">ISP header pins</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.445.1">ISRs. </span><i><span class="koboSpan" id="kobo.446.1">See</span></i><span class="koboSpan" id="kobo.447.1"> Interrupt Service Routines</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.448.1">J</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.449.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.450.1">JSON web service</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.451.1">K</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.452.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.453.1">kbd_poll function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.454.1">keyboard</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.455.1">connecting</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.456.1">emulating</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.457.1">Keyboard library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.458.1">KeyboardController library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.459.1">keyPressed function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.460.1">keyReleased function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.461.1">keywords file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.462.1">Knight, Peter</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.463.1">L</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.464.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.465.1">lastChangeTime variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.466.1">least significant bit (LSB)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.467.1">LED backpack boards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.468.1">ledState variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.469.1">Leostick board</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.470.1">level converters</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.471.1">libraries</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.472.1">creating and sharing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.473.1">overview of Arduino</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.474.1">See also specific libraries</span></i></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.475.1">light sensors</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.476.1">LiPo batteries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.477.1">LiquidCrystal library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.478.1">Lithium batteries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.479.1">localIP function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.480.1">long data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.481.1">loop function</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.482.1">global variables used in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.483.1">hardware interrupts and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.484.1">performance improvements and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.485.1">Serial commands and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.486.1">USB activity check and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.487.1">web servers and</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.488.1">LOW interrupt mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.489.1">lowByte function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.490.1">low-pass filter</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.491.1">M</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.492.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.493.1">MAC addresses</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.494.1">main.cpp file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.495.1">main function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.496.1">malloc command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.497.1">masking bits</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.498.1">Master In Slave Out (MISO)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.499.1">Master Out Slave In (MOSI)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.500.1">master/slave arrangement</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.501.1">Max3421e.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.502.1">MCP3008 eight-channel ADC</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.503.1">memory</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.504.1">EEPROM</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.505.1">Flash</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.506.1">measuring free</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.507.1">minimizing RAM</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.508.1">misconceptions about</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.509.1">PC vs. </span><span class="koboSpan" id="kobo.509.2">Arduino use of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.510.1">recursion related to</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.511.1">SD card storage and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.512.1">static vs. </span><span class="koboSpan" id="kobo.512.2">dynamic allocation of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.513.1">string constants stored in</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.514.1">MemoryFree library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.515.1">messageIndex variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.516.1">methods</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.517.1">Micro USB OTG Host Cable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.518.1">microcontrollers</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.519.1">bootloader program on</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.520.1">power management functions of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.521.1">software for programming</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.522.1">micros command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.523.1">microSD card slot</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.524.1">millis command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.525.1">most significant bit (MSB)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.526.1">mouse</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.527.1">connecting</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.528.1">emulating</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.529.1">Mouse library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.530.1">mouseMoved function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.531.1">mousePressed function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.532.1">mouseReleased function</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.533.1">N</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.534.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.535.1">Narcoleptic library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.536.1">native USB port</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.537.1">network connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.538.1">establishing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.539.1">Ethernet examples of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.540.1">Ethernet library for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.541.1">hardware used for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.542.1">making web requests</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.543.1">web server setup</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.544.1">WiFi example of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.545.1">WiFi library for</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.546.1">networking hardware</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.547.1">Arduino Ethernet/EtherTen</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.548.1">Ethernet Shield</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.549.1">WiFi Shield</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.550.1">nibbles</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.551.1">NiMh batteries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.552.1">NMEA standards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.553.1">noInterrupts function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.554.1">nonvolatile flash memory</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.555.1">noTone command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.556.1">null character</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.557.1">O</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.558.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.559.1">OneWire library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.560.1">onReceive function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.561.1">open-collector outputs</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.562.1">outputs</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.563.1">analog</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.564.1">commands for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.565.1">digital</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.566.1">open-collector</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.567.1">speeding up</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.568.1">P</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.569.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.570.1">pageNameIs function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.571.1">parasitic power</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.572.1">parseFloat function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.573.1">parseInt function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.574.1">parts, suppliers of</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.575.1">performance</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.576.1">improving</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.577.1">testing</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.578.1">pgm_read_word function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.579.1">photoresistors</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.580.1">pin definitions</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.581.1">pinMode command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.582.1">pins</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.583.1">interrupt</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.584.1">ISP header</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.585.1">Rx and Tx</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.586.1">Save Select</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.587.1">SoftwareSerial</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.588.1">pins_arduino.h file</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.589.1">port input D (PIND) register</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.590.1">PORTD register</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.591.1">ports</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.592.1">ATmega328</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.593.1">directly using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.594.1">registers for controlling</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.595.1">specifying in IDE</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.596.1">USB</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.597.1">power</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.598.1">clock speed and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.599.1">connections for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.600.1">consumption of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.601.1">digital outputs to control</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.602.1">functions for managing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.603.1">LED indicating</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.604.1">parasitic</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.605.1">sources of</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.606.1">Power over Ethernet (PoE) adapter</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.607.1">Power Supervision unit</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.608.1">precompiler directives</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.609.1">Prescaler library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.610.1">press command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.611.1">print statements</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.612.1">printByte function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.613.1">Processing framework</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.614.1">processors</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.615.1">See also</span></i><span class="koboSpan" id="kobo.616.1"> microcontrollers</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.617.1">Program Memory (PROGMEM) directive</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.618.1">programmers</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.619.1">burning bootloaders using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.620.1">programming Arduino using</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.621.1">Programming Arduino: Getting Started with Sketches</span></i><span class="koboSpan" id="kobo.622.1"> (Monk)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.623.1">programming language</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.624.1">programming USB port</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.625.1">programs. </span><i><span class="koboSpan" id="kobo.626.1">See</span></i><span class="koboSpan" id="kobo.627.1"> sketches</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.628.1">pull-up resistors</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.629.1">pulseIn command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.630.1">pulse-width modulation (PWM) signals</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.631.1">produced by Arduino Uno</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.632.1">timer generation of</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.633.1">R</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.634.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.635.1">RAM</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.636.1">measuring free</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.637.1">minimizing usage of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.638.1">PC vs. </span><span class="koboSpan" id="kobo.638.2">Arduino use of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.639.1">static</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.640.1">See also</span></i><span class="koboSpan" id="kobo.641.1"> memory</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.642.1">read command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.643.1">readADC function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.644.1">readBytes function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.645.1">readHeader function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.646.1">readSecretCodeFromEEPROM function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.647.1">readStringUntil function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.648.1">readUntil function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.649.1">real-time clock (RTC) module</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.650.1">receiveEvent function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.651.1">recursion</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.652.1">registers</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.653.1">releaseAll command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.654.1">replace function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.655.1">requestFrom function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.656.1">Reset connector</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.657.1">Reset switch</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.658.1">resistors</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.659.1">fixed</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.660.1">photoresistors</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.661.1">pull-up</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.662.1">RISING interrupt mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.663.1">RS232 standard</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.664.1">RTClib library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.665.1">Rx and Tx pins</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.666.1">S</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.667.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.668.1">sampleWindowFull function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.669.1">Save Select (SS) pin</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.670.1">saveSecretCodeToEEPROM function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.671.1">Scheduler library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.672.1">SD cards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.673.1">SD library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.674.1">search function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.675.1">sendAnalogReadings function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.676.1">sendBody function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.677.1">sendHeader function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.678.1">sendReadings variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.679.1">Serial.available function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.680.1">Serial.begin command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.681.1">Serial Clock Line (SCL)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.682.1">Serial commands</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.683.1">Serial Data Line (SDL)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.684.1">Serial interface</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.685.1">commands</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.686.1">examples of using</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.687.1">hardware overview</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.688.1">protocol and baud rate</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.689.1">SoftwareSerial library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.690.1">Serial Monitor</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.691.1">serial communications</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.692.1">sine wave sketch</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.693.1">Serial Peripheral Interface. </span><i><span class="koboSpan" id="kobo.694.1">See</span></i><span class="koboSpan" id="kobo.695.1"> SPI bus</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.696.1">Serial.println commands</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.697.1">Serial protocol</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.698.1">server, web</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.699.1">Servo library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.700.1">setFrequency function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.701.1">setPinStates function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.702.1">setup function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.703.1">sharing libraries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.704.1">shields</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.705.1">Ethernet</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.706.1">USB Host</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.707.1">WiFi</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.708.1">shifting bits</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.709.1">signal processing. </span><i><span class="koboSpan" id="kobo.710.1">See</span></i><span class="koboSpan" id="kobo.711.1"> Digital Signal Processing</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><a href="http://simonmonk.org"><span class="koboSpan" id="kobo.712.1">simonmonk.org</span></a><span class="koboSpan" id="kobo.713.1"> website</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.714.1">sin function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.715.1">sine waves</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.716.1">single-thread model</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.717.1">sizeof function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.718.1">sketches</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.719.1">comments in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.720.1">functions in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.721.1">if statements in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.722.1">loops in</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.723.1">size message for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.724.1">uploading to Arduino</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.725.1">variables in</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.726.1">slave/master concept</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.727.1">sleep mode</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.728.1">external interrupts and</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.729.1">timer method and</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.730.1">software</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.731.1">Arduino IDE</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.732.1">AVR Studio</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.733.1">SoftwareSerial library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.734.1">Sparkfun parts</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.735.1">spectrum analyzer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.736.1">speed of Arduino boards</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.737.1">improving</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.738.1">reducing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.739.1">testing</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.740.1">SPI bus</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.741.1">bit manipulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.742.1">configuration functions</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.743.1">device example</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.744.1">hardware connections</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.745.1">master/slave arrangement</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.746.1">sample wiring diagram</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.747.1">SPI library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.748.1">SPI library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.749.1">Spi.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.750.1">sprintf function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.751.1">stack</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.752.1">stack frame</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.753.1">static memory allocation</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.754.1">static RAM (SRAM)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.755.1">step function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.756.1">Stepper library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.757.1">string constants</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.758.1">String Object library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.759.1">strings</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.760.1">Arduino library of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.761.1">C char arrays as</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.762.1">creating and concatenating</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.763.1">finding the length of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.764.1">formatting</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.765.1">strlen function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.766.1">substring function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.767.1">successive approximation ADC</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.768.1">suppliers of parts</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.769.1">switchPin variable</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.770.1">System Clock (SCLK)</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.771.1">T</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.772.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.773.1">TEA5767 FM receiver module</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.774.1">I2C example</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.775.1">library example</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.776.1">temperature readings</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.777.1">temperature sensor</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.778.1">testing</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.779.1">speed of Arduino boards</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.780.1">written libraries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.781.1">text. </span><i><span class="koboSpan" id="kobo.782.1">See</span></i><span class="koboSpan" id="kobo.783.1"> strings</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.784.1">threads</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.785.1">time commands</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.786.1">time domain</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.787.1">timer interrupts</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.788.1">Timer library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.789.1">TimerOne library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.790.1">toInt function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.791.1">tone command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.792.1">transfer function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.793.1">trim function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.794.1">tri-state mode</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.795.1">trueDelay function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.796.1">trueMillis function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.797.1">TTL Serial</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.798.1">tutorials on Arduino</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.799.1">Twitter account of author</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.800.1">Two Wire Interface (TWI)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.801.1">Tx and Rx pins</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.802.1">U</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.803.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.804.1">uint8_ data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.805.1">Universal Asynchronous Receiver Transmitters (UARTs)</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.806.1">unofficial Arduino boards</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.807.1">unsigned int data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.808.1">unsigned long data type</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.809.1">unsigned qualifier</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.810.1">updateData function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.811.1">Upload button</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.812.1">uploading</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.813.1">libraries</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.814.1">sketches</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.815.1">USB connection</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.816.1">Usb.h library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.817.1">USB Host feature</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.818.1">built-in on Arduino Due</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.819.1">USB Host shield/libraries</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.820.1">USB programming</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.821.1">keyboard emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.822.1">mouse emulation</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.823.1">USB Host feature</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.824.1">USBDroid board</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.825.1">USBHost library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.826.1">USB_Host_Shield library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.827.1">USB-to-serial interface</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.828.1">V</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.829.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.830.1">valueOfParam function</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.831.1">variables</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.832.1">constant</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.833.1">global</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.834.1">volatile</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><i><span class="koboSpan" id="kobo.835.1">See also specific variables</span></i><span class="koboSpan" id="kobo.836.1"> Venus GPS module</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.837.1">very fast digital output</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.838.1">void command</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.839.1">volatile variables</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.840.1">voltage, measuring</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.841.1">W</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.842.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.843.1">waking from sleep</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.844.1">external interrupts for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.845.1">timer method for</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.846.1">Watchdog Timer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.847.1">web requests</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.848.1">web server</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.849.1">websites</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.850.1">author</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.851.1">official Arduino</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.852.1">supplier</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.853.1">while loop</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.854.1">WiFi connections</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.855.1">WiFi library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.856.1">WiFi shields</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.857.1">WiFiClient</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.858.1">WiFiServer</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.859.1">Wire library</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.860.1">wireless modules</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.861.1">Wiring framework</span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.862.1">writing libraries</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.863.1">classes and methods for</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.864.1">TEA5767 Radio example of</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.865.1">testing and releasing after</span></span></div>
+<div class="index1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.866.1">useful reasons for</span></span></div>
+<div class="indexhead" xmlns="http://www.w3.org/1999/xhtml"><span><b><span class="koboSpan" id="kobo.867.1">X</span></b></span></div>
+<div class="image-1" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.868.1"><img width="100%" alt="image" src="images/line2.jpg" xmlns="http://www.w3.org/1999/xhtml"></img></span></span></div>
+<div class="index" xmlns="http://www.w3.org/1999/xhtml"><span><span class="koboSpan" id="kobo.869.1">Xbee library</span></span></div>
+</div></div></body>
+</html>

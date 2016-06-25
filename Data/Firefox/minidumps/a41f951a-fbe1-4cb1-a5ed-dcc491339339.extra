@@ -1,0 +1,30 @@
+Winsock_LSP=MSAFD Tcpip [TCP/IP] : 2 : 1 :  \n MSAFD Tcpip [UDP/IP] : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD Tcpip [RAW/IP] : 2 : 3 : %SystemRoot%\\system32\\mswsock.dll \n RSVP UDP Service Provider : 6 : 2 : %SystemRoot%\\system32\\rsvpsp.dll \n RSVP TCP Service Provider : 6 : 1 : %SystemRoot%\\system32\\rsvpsp.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{B40738F9-7DDB-4B4E-A19D-E975D4D3C8DA}] SEQPACKET 7 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{B40738F9-7DDB-4B4E-A19D-E975D4D3C8DA}] DATAGRAM 7 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{18BFA860-9DB3-4F8E-BE26-0253D5BC062D}] SEQPACKET 4 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{18BFA860-9DB3-4F8E-BE26-0253D5BC062D}] DATAGRAM 4 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{B2EF3E88-8853-4CA5-A528-996792DA9646}] SEQPACKET 3 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{B2EF3E88-8853-4CA5-A528-996792DA9646}] DATAGRAM 3 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{8ADE469E-8697-48FE-B64E-9F9FF645CA1F}] SEQPACKET 0 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{8ADE469E-8697-48FE-B64E-9F9FF645CA1F}] DATAGRAM 0 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{AABF8866-F103-430A-9456-DC72E2385829}] SEQPACKET 1 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{AABF8866-F103-430A-9456-DC72E2385829}] DATAGRAM 1 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{61E4E825-4414-40EC-977B-6FEBAAD2999C}] SEQPACKET 2 : 2 : 5 : %SystemRoot%\\system32\\mswsock.dll \n MSAFD NetBIOS [\\Device\\NetBT_Tcpip_{61E4E825-4414-40EC-977B-6FEBAAD2999C}] DATAGRAM 2 : 2 : 2 : %SystemRoot%\\system32\\mswsock.dll
+AdapterVendorID=0x1002
+StartupTime=1423733441
+EMCheckCompatibility=true
+ProductName=Firefox
+Theme=classic/1.0
+Vendor=Mozilla
+InstallTime=1423733441
+AdapterDeviceID=0x9442
+ReleaseChannel=release
+Notes=AdapterVendorID: 0x1002, AdapterDeviceID: 0x9442, AdapterSubsysID: 21c01458, AdapterDriverVersion: 8.512.0.0\nD3D10 Layers? D3D10 Layers- D3D9 Layers? D3D9 Layers- 
+FramePoisonSize=65536
+Version=29.0
+FramePoisonBase=00000000f0de0000
+ServerURL=https://crash-reports.mozilla.com/submit?id={ec8030f7-c20a-464f-9b0e-13a3a9e97384}&version=29.0&buildid=20140421221237
+useragent_locale=ru
+Add-ons=%7B097d3191-e6fa-4728-9826-b533d755359d%7D:0.7.22,ClassicThemeRestorer%40ArisT2Noia4dev:1.1.8,custombuttons%40xsms.org:0.0.5.7,fastdial%40telega.phpnet.us:4.11,faviconrestorer%40masserog.it:1.4,firegestures%40xuldev.org:1.8.6,%7B7f57cf46-4467-4c2d-adfa-0cba7c507e54%7D:3.0.2,%7B53A03D43-5363-4669-8190-99061B2DEBA5%7D:1.5.9,%7B5F590AA2-1221-4113-A6F4-A4BB62414FAC%7D:0.45.8.20130519.3,status4evar%40caligonstudios.com:2014.05.03.06,%7Bdc572301-7619-498c-a57d-39143191b318%7D:0.4.1.3.1,gimgsrchfox%40gimgsrchfox.ru:0.0.1,secureLogin%40blueimp.net:1.0.3,%7B46551EC9-40F0-4e47-8E18-8E5CF550CFB8%7D:1.4.3,helper%40savefrom.net:3.70,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:29.0,%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D:2.6.1,fbt%40quicksaver:1.4.18,disallowscriptbtn%40code.google.com:0.2.3,%7Bb9bfaf1c-a63f-47cd-8b9a-29526ced9060%7D:1.7.25
+BIOS_Manufacturer=American Megatrends Inc.
+ProductID={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+URL=http://yandex.ru/yandsearch?text=%D1%81%D0%B5%D0%BA%D1%81%D0%B0%D0%BF%D0%B8%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%BA%D0%B0%2023%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%B1%D0%BB%D0%BE%D0%BD%D0%B4%D0%B8%D0%BD%D0%BA%D0%B8%20%D0%B3%D0%BE%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D0%B2%D1%83%D1%88%D0%BA%D0%B8&from=fx3&clid=1909644
+BuildID=20140421221237
+CrashTime=1423844531
+BreakpadReserveAddress=51707904
+BreakpadReserveSize=37748736
+BlockedDllList=
+SystemMemoryUsePercentage=98
+TotalVirtualMemory=2147352576
+AvailableVirtualMemory=513916928
+AvailablePageFile=5324800
+AvailablePhysicalMemory=55435264
