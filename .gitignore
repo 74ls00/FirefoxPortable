@@ -1,6 +1,10 @@
 mod.txt
 git.txt
 
+FirefoxMoonPortable.ini
+FirefoxPortable.ini
+
+
 parent.lock
 
 cert8.db
@@ -39,6 +43,7 @@ crashes
 datareporting
 epub
 healthreport
+
 OfflineCache
 safebrowsing
 saved-telemetry-pings
