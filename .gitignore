@@ -34,11 +34,19 @@ Firefox_64.44
 
 bookmarkbackups
 cache2
+chrome
 crashes
+datareporting
+epub
+healthreport
+OfflineCache
+safebrowsing
+saved-telemetry-pings
+
 ScrapBook
 sessionstore-backups
 storage
-
+thumbnails
 
 
 
