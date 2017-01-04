@@ -37,6 +37,8 @@ user_pref("browser.tabs.showAudioPlayingIcon", false); /*отключить показ управле
 
 /*END user*/
 
+
+
 /*Firefox Portable*/
 user_pref("app.update.auto", false);
 user_pref("app.update.enabled", false); /*авто обновление браузера*/
