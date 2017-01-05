@@ -1,18 +1,48 @@
+#####
 mod.txt
 git.txt
 
-browser
+#### \
+3d
+backup
+local
+old
+
+### \
+FirefoxMoonPortable.ini
+#FirefoxPortable.ini
+
+### \App
+Firefox_64.39
+Firefox_64.39.7z
+
+### \App\Firefox*
+#browser
 uninstall
 
-AccessibleMarshal.dll
-breakpadinjector.dll
+#AccessibleMarshal.dll
+#breakpadinjector.dll
 crashreporter.exe
 
+###\Data\Firefox\
+bookmarkbackups
+cache2
+chrome
+crashes
+datareporting
+epub
+jumpListCache
+healthreport
+OfflineCache
+safebrowsing
+saved-telemetry-pings
+ScrapBook
+sessionstore-backups
+startupCache
+storage
+thumbnails
 
-FirefoxMoonPortable.ini
-FirefoxPortable.ini
-
-
+###\Data\Firefox
 parent.lock
 
 cert8.db
@@ -26,6 +56,7 @@ places.sqlite
 places.sqlite-shm
 places.sqlite-wal
 prefs-1.js
+prefs-2.js
 session.rdf
 session-1.rdf
 sessionCheckpoints.json
@@ -34,38 +65,9 @@ webappsstore.sqlite
 webappsstore.sqlite-shm
 webappsstore.sqlite-wal
 
+sessionstore.js
 
-
-3d
-backup
-local
-
-prefs-2.js
-
-
-Firefox_64.39
-Firefox_64.39.7z
-
-bookmarkbackups
-cache2
-chrome
-crashes
-datareporting
-epub
-healthreport
-
-OfflineCache
-safebrowsing
-saved-telemetry-pings
-
-ScrapBook
-sessionstore-backups
-storage
-thumbnails
-
-jumpListCache
-startupCache
-
+####
 *.7z
 *.zip
 
