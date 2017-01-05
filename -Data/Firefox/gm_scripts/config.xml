@@ -1,0 +1,6 @@
+<UserScriptConfig>
+	<Script basedir="Redirect_for_sites" checkRemoteUpdates="true" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Redirect_for_sites.user.js" installTime="1439240500763" lastUpdateCheck="NaN" modified="1439241715430" name="Redirect for sites" namespace="dev/null" runAt="document-end" updateAvailable="false" version="1.0">
+		<Include>http://*.*</Include>
+		<Include>https://*.*</Include>
+	</Script>
+</UserScriptConfig>

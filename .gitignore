@@ -40,7 +40,7 @@ webappsstore.sqlite-wal
 backup
 local
 
-
+prefs-2.js
 
 
 Firefox_64.39
@@ -63,7 +63,8 @@ sessionstore-backups
 storage
 thumbnails
 
-
+jumpListCache
+startupCache
 
 *.7z
 *.zip

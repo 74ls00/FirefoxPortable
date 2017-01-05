@@ -1,5 +1,0 @@
-checkbox:focus:not([label]) .checkbox-label-box
-{
-   -moz-appearance:none; 
-   border:none;
-}

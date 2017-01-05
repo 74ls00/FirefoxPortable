@@ -1,2 +1,0 @@
-MSVCR120.dll
-MSVCP120.dll
