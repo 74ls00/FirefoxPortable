@@ -1,0 +1,65 @@
+1492169514534	Sync.LogManager	DEBUG	Flushing file log
+1492169514578	browserwindow.syncui	DEBUG	observed: weave:ui:clear-error
+1492169514578	browserwindow.syncui	DEBUG	observed: weave:ui:clear-error
+1492169515065	Sync.LogManager	DEBUG	Log cleanup threshold time: 1491305515065
+1492169515338	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms.
+1492169522278	Sync.LogManager	DEBUG	Done deleting files.
+1492169691874	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492169691876	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485403	Sync.Service	DEBUG	User-Agent: Firefox/50.1.0 (Windows NT 6.1; Win64; x64) FxSync/1.52.0.20161208153507.desktop
+1492173485403	Sync.Service	INFO	Starting sync at 2017-04-14 16:38:05
+1492173485403	Sync.Service	DEBUG	In sync: should login.
+1492173485404	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1492173485405	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1492173485406	browserwindow.syncui	DEBUG	observed: weave:service:login:start
+1492173485406	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1492173485406	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1492173485406	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1492173485406	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1492173485406	browserwindow.syncui	DEBUG	observed: weave:service:login:error
+1492173485407	browserwindow.syncui	DEBUG	onLoginError: login=error.login.reason.no_username, sync=success.sync
+1492173485408	browserwindow.syncui	DEBUG	observed: weave:service:login:error
+1492173485408	browserwindow.syncui	DEBUG	onLoginError: login=error.login.reason.no_username, sync=success.sync
+1492173485408	browserwindow.syncui	DEBUG	observed: weave:service:login:error
+1492173485408	browserwindow.syncui	DEBUG	onLoginError: login=error.login.reason.no_username, sync=success.sync
+1492173485409	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1492173485409	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1492173485410	Sync.Service	DEBUG	Exception: Aborting login, client not configured.
+1492173485410	Sync.Service	DEBUG	Not syncing: login returned false.
+1492173485418	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485419	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485420	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485421	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485422	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485422	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485425	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485426	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485426	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485426	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485426	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485426	browserwindow.syncui	DEBUG	_loginFailed has sync state=error.login.reason.no_username
+1492173485427	Sync.ErrorHandler	DEBUG	Addons installed: 24
+1492173485427	Sync.ErrorHandler	DEBUG	 - Поиск похожих изображений с помощи google.ru, version 0.0.1.1-signed, id gimgsrchfox@gimgsrchfox.ru
+1492173485427	Sync.ErrorHandler	DEBUG	 - Classic Theme Restorer (Customize UI), version 1.3.8, id ClassicThemeRestorer@ArisT2Noia4dev
+1492173485428	Sync.ErrorHandler	DEBUG	 - disallow Script Button, version 0.3.3.1-signed, id disallowscriptbtn@code.google.com
+1492173485428	Sync.ErrorHandler	DEBUG	 - FireGestures, version 1.10.1, id firegestures@xuldev.org
+1492173485428	Sync.ErrorHandler	DEBUG	 - SmoothWheel (AMO), version 0.45.8.20130519.3.1-signed, id {5F590AA2-1221-4113-A6F4-A4BB62414FAC}
+1492173485428	Sync.ErrorHandler	DEBUG	 - Status-4-Evar, version 2015.02.06.23.1-signed, id status4evar@caligonstudios.com
+1492173485429	Sync.ErrorHandler	DEBUG	 - Tab Mix Plus, version 0.4.1.9, id {dc572301-7619-498c-a57d-39143191b318}
+1492173485429	Sync.ErrorHandler	DEBUG	 - Favicon Restorer, version 1.4.1-signed, id faviconrestorer@masserog.it
+1492173485429	Sync.ErrorHandler	DEBUG	 - HTTPS-Everywhere, version 5.1.0, id https-everywhere@eff.org
+1492173485429	Sync.ErrorHandler	DEBUG	 - FB2 читалка, version 0.26.1-signed, id fb2reader@clear.com.ua
+1492173485429	Sync.ErrorHandler	DEBUG	 - uc, version 20150814, id uc@satyr.github.com
+1492173485430	Sync.ErrorHandler	DEBUG	 - Fast Dial, version 4.12.2, id fastdial@telega.phpnet.us
+1492173485430	Sync.ErrorHandler	DEBUG	 - Browsec, version 2.0.3, id browsec@browsec.com
+1492173485430	Sync.ErrorHandler	DEBUG	 - ePN CashBack Plugin, version 0.2.2, id jid1-XAZYVkS6OPAR5Q@jetpack
+1492173485430	Sync.ErrorHandler	DEBUG	 - Easy Youtube Video Downloader Express, version 9.08, id {b9acf540-acba-11e1-8ccb-001fd0e08bd4}
+1492173485430	Sync.ErrorHandler	DEBUG	 - Secure Login, version 1.2.2, id secureLogin@blueimp.net
+1492173485430	Sync.ErrorHandler	DEBUG	 - Adblock Plus, version 2.8.2, id {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1492173485430	Sync.ErrorHandler	DEBUG	 - FindBar Tweak, version 2.1.11, id fbt@quicksaver
+1492173485431	Sync.ErrorHandler	DEBUG	 - Mozilla Archive Format, version 4.0.1, id {7f57cf46-4467-4c2d-adfa-0cba7c507e54}
+1492173485431	Sync.ErrorHandler	DEBUG	 - EPUBReader, version 1.5.0.9, id {5384767E-00D9-40E9-B72F-9CC39D655D6F}
+1492173485431	Sync.ErrorHandler	DEBUG	 - ScrapBook, version 1.5.9, id {53A03D43-5363-4669-8190-99061B2DEBA5}
+1492173485431	Sync.ErrorHandler	DEBUG	 - Custom Buttons, version 0.0.5.8.9, id custombuttons@xsms.org
+1492173485431	Sync.ErrorHandler	DEBUG	 - Stylish, version 2.0.7, id {46551EC9-40F0-4e47-8E18-8E5CF550CFB8}
+1492173485431	Sync.ErrorHandler	DEBUG	 - All-in-One Sidebar, version 0.7.31, id {097d3191-e6fa-4728-9826-b533d755359d}
