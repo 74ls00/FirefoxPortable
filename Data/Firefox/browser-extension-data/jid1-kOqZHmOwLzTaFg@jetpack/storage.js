@@ -1,0 +1,1 @@
+{"currency":"RUB","currencySymbol":" руб.","currencyRate":"65.3528"}
