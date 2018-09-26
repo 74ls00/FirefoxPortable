@@ -15,6 +15,10 @@ FirefoxMoonPortable.ini
 ### \App
 Firefox_64.39
 Firefox_64.39.7z
+Firefox_64-
+Firefox_64-52
+
+
 
 ### \App\Firefox*
 #browser
@@ -27,7 +31,7 @@ crashreporter.exe
 ###\Data\Firefox\
 bookmarkbackups
 cache2
-chrome
+/Data/Firefox/chrome
 crashes
 datareporting
 epub
@@ -43,6 +47,8 @@ storage
 thumbnails
 
 ###\Data\Firefox
+/Data/Firefox/fastdial/cache
+
 parent.lock
 
 cert8.db
@@ -69,7 +75,7 @@ sessionstore.js
 
 ####
 *.7z
-*.zip
+#*.zip
 
 *.bak
 *.lnk
@@ -104,3 +110,5 @@ sessionstore.js
 *.mpd
 *.pro
 *.job
+
+

@@ -1,22 +1,24 @@
 Generated File. Do not edit.
 
 [HEADER]
-Version|0.17|$
+Version|0.18t|$
 Arch|x86_64-msvc|$
 
 [PLUGINS]
-NPSWF64_24_0_0_186.dll|$
-C:\Windows\system32\Macromed\Flash\NPSWF64_24_0_0_186.dll|$
-24.0.0.186|$
-1482622272349|0|0|0|$
-Shockwave Flash 24.0 r0|$
+NPSWF64_30_0_0_154.dll|$
+C:\Windows\system32\Macromed\Flash\NPSWF64_30_0_0_154.dll|$
+30.0.0.154|$
+1535878197026|0|0|0|$
+Shockwave Flash 30.0 r0|$
 Shockwave Flash|$
 2
 0|application/x-shockwave-flash|Adobe Flash movie|swf|$
 1|application/futuresplash|FutureSplash movie|spl|$
 
 [INVALID]
-C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\npuplaypchub.dll|$
-1524211005139|$
-C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\npuplaypc.dll|$
-1524211005137|$
+T:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\npFoxitReaderPlugin.dll|$
+1531791572000|$
+C:\Program Files\Java\jre1.8.0_73\bin\plugin2\npjp2.dll|$
+1535039738902|$
+C:\Program Files\Java\jre1.8.0_73\bin\dtplugin\npdeployJava1.dll|$
+1535039738803|$

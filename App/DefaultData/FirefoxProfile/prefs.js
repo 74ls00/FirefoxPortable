@@ -37,6 +37,12 @@ user_pref("browser.tabs.showAudioPlayingIcon", false); /*отключить показ управле
 
 user_pref("full-screen-api.warning.timeout", 0); /*отключить предупреждение о полноэкрнанном режиме*/
 
+/*отключить плавный переход в полноэкранный режим при аэро*/
+user_pref("full-screen-api.transition-duration.enter", "0 0");
+user_pref("full-screen-api.transition-duration.leave", "0 0");
+
+
+
 
 /*END user*/
 

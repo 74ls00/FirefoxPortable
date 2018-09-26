@@ -29,7 +29,7 @@ copy %ffpath%Backup\%bfname%%now%.7z %drvbak2p%\%bfname%%now%.7z
 
 echo %drvbak%\%bfname%%now%.7z
 echo %drvbak2p%\%bfname%%now%.7z 
-start /d %ffpath% FirefoxPortable.exe
+start /d %ffpath% Firefox64Portable.exe
 
 
 
