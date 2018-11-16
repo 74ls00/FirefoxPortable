@@ -1,0 +1,1 @@
+{"start_screen_showed":true,"notify_20181111sale":true}
