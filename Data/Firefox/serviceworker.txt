@@ -11,8 +11,8 @@ https://www.youtube.com/sw.js
 #
 
 https://www.dns-shop.ru/
-https://www.dns-shop.ru/pwa-sw-main.js?precacheURLs=%5B%22%2Fassets%2F503685dd%2Fjs%2Fmodules%2Fpwa%2Foffline-page.js%22%2C%22%2Fassets%2F503685dd%2Fcss%2Fmodules%2Fpwa%2Foffline-page%2Foffline-page.css%22%2C%7B%22url%22%3A%22%2Ffiles%2Ferror-page%2Fcity-info.json%22%2C%22revision%22%3A3329977424%7D%2C%7B%22url%22%3A%22%2Ffiles%2Ferror-page%2Fshops.json%22%2C%22revision%22%3A2943387302%7D%2C%7B%22url%22%3A%22%2Ffiles%2Fpwa%2Foffline-page.html%22%2C%22revision%22%3A1192397442%7D%5D
-{3446dd73-f98e-44cc-b5c8-db5098b32a3a}
+https://www.dns-shop.ru/pwa-sw-main.js?precacheURLs=%5B%22%2Fassets%2Fc6c1526b%2Fjs%2Fmodules%2Fpwa%2Foffline-page.js%22%2C%22%2Fassets%2Fc6c1526b%2Fcss%2Fmodules%2Fpwa%2Foffline-page%2Foffline-page.css%22%2C%7B%22url%22%3A%22%2Ffiles%2Ferror-page%2Fcity-info.json%22%2C%22revision%22%3A3329977424%7D%2C%7B%22url%22%3A%22%2Ffiles%2Ferror-page%2Fshops.json%22%2C%22revision%22%3A2943387302%7D%2C%7B%22url%22%3A%22%2Ffiles%2Fpwa%2Foffline-page.html%22%2C%22revision%22%3A3853544886%7D%5D
+{3f1ca5ef-597b-41d3-b2cd-719ae94961af}
 #
 
 https://tjournal.ru/
@@ -26,8 +26,8 @@ https://sdelaysam-svoimirukami.ru/sp-push-worker.js
 #
 
 https://plus.google.com/
-https://plus.google.com/serviceworker.js?xhrRoot=/_/PlusAppUi&mssRowKey=boq.PlusAppUi.ru.qm76P9sDpwk.O
-{ac3d397d-9f1a-454f-96a8-c5a6911cf1a8}
+https://plus.google.com/serviceworker.js?xhrRoot=/_/PlusAppUi&mssRowKey=boq.PlusAppUi.ru.f8jok08wWok.O
+{e826e714-1699-4988-852e-cc6a4b29ceaa}
 #
 
 https://photos.google.com/
@@ -55,12 +55,57 @@ https://newbusiness.su/serviceWorker.js
 {ee725253-31db-42dd-86e7-c09183489617}
 #
 
-https://yandex.ru/collections/
-https://yandex.ru/collections/sw-desktop.js
-{4678d23c-b052-4ec7-8d5f-13bd898bcc04}
-#
-
 https://vellisa.ru/
 https://vellisa.ru/sp-push-worker.js
 {477a44b1-4bb5-4c01-9fd8-cdb4ee62fb89}
+#
+
+https://www.kp.ru/
+https://www.kp.ru/BMSPushServiceWorker.js
+{e7a8c1b5-9572-4502-91a4-0660768ba5ed}
+#
+
+https://nanegative.ru/
+https://nanegative.ru/sp-push-worker.js
+{d9e9e6dd-5a0e-429c-8d76-e779b7f46a12}
+#
+
+https://kitchendecorium.ru/
+https://kitchendecorium.ru/sp-push-worker.js
+{d140c538-d7aa-401f-bb30-758893f47535}
+#
+
+https://thequestion.ru/
+https://thequestion.ru/sw.js
+{e8ec7769-0380-4097-b612-acdb1d1b0257}
+#
+
+https://delux.ru.aliexpress.com/store/
+https://delux.ru.aliexpress.com/store/service-worker.js
+{3d6f6eb5-beba-47b0-8fc7-03656505bd57}
+#
+
+https://www.rspectr.com/
+https://www.rspectr.com/sp-push-worker.js
+{a1426c10-16fc-4621-946b-e42c9aec5933}
+#
+
+https://discourse.mozilla.org/
+https://discourse.mozilla.org/service-worker-83e47e9f07bb77a5c8146b30ee8c7761c0ce036d70528cd57da81981879b70f7.js
+{e375038c-7e3e-4778-adf2-05e5dab35e22}
+#
+
+https://www.smashcast.tv/
+https://www.smashcast.tv/sw.js
+{eaffcc59-2700-4f4a-8f2e-feeb2fb3ac60}
+#
+
+https://smarty.sale/
+https://smarty.sale/sw2.js
+{6b132ae6-f5a2-44cc-86b9-c59983f1de97}
+#
+
+https://samelectrik.ru/
+https://samelectrik.ru/rb_serviceworker.js
+{5b4c5b15-a32f-402c-b562-2b453b75f050}
 #
