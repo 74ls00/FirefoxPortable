@@ -56,6 +56,7 @@ cookies.sqlite
 cookies.sqlite.bak-rebuild
 cookies.sqlite-shm
 cookies.sqlite-wal
+formhistory.sqlite
 key3.db
 logins.json
 places.sqlite
@@ -63,6 +64,8 @@ places.sqlite-shm
 places.sqlite-wal
 prefs-1.js
 prefs-2.js
+secmod.db
+serviceworker.txt
 session.rdf
 session-1.rdf
 sessionCheckpoints.json
