@@ -1,0 +1,113 @@
+/**
+* @title Зелёная
+*/
+
+
+body {
+
+background-image: none;
+
+background-repeat: repeat;
+
+background-position: top left;
+
+background-size: auto;
+
+font-family: 'Tahoma';
+
+font-size: 11px;
+
+background-color: #16a600;
+
+}
+
+
+.back {
+
+background-image: url(chrome://fastdial/skin/images/back.png);
+
+}
+
+
+.search-input {
+
+background-image: none;
+
+color: #000000;
+
+background-color: transparent;
+
+border: 1px solid #d3d3d3;
+
+}
+
+
+.thumbnail {
+
+background-color: transparent;
+
+border: 1px solid #333333;
+
+margin: 4px;
+
+opacity: 1;
+
+border-radius: 3px;
+
+box-shadow: none;
+
+}
+
+
+div.thumbnail:hover, .hover {
+
+background-color: transparent;
+
+border: 1px solid #ff0000;
+
+margin: 4px;
+
+opacity: 1;
+
+border-radius: 3px;
+
+box-shadow: none;
+
+}
+
+
+.title {
+
+color: #000000;
+
+background-color: #eeeeee;
+
+border-top: 1px solid #d3d3d3;
+
+}
+
+
+div.thumbnail:hover .title, .hover .title {
+
+color: #000000;
+
+background-color: #e8e8e8;
+
+border-top: 1px solid #d3d3d3;
+
+}
+
+
+.title img {
+
+display: inline;
+
+}
+
+
+div.thumbnail:hover .title img, .hover .title img {
+
+display: inline;
+
+}
+

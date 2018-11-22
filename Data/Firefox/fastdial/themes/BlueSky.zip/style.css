@@ -1,0 +1,103 @@
+/**
+ * @title BlueSky
+ */
+
+   
+   body {
+   
+     /* background: url("chrome://fastdial-profile/content/themes/current/BlueSky_body.jpg") top left repeat;*/
+   
+      font-family: "Tahoma";
+   
+      font-size: 11;
+   
+      background-color: transparent;
+   
+   }
+
+   
+   .back {
+   
+      background-image: url("chrome://fastdial/skin/images/back.png");
+   
+   }
+
+   
+   .search-input {
+   
+      background-image: none;
+   
+      color: #000000;
+   
+      background-color: #9ddbff;
+   
+      border: 1px solid #068ada;
+   
+   }
+
+   
+   .thumbnail {
+   
+      background-color: #ccebfd;
+   
+      border: 1px solid #068ada;
+   
+      margin: 8;
+   
+      opacity: 0.8;
+   
+   }
+
+   
+   div.thumbnail:hover, .hover {
+   
+      background-color: #9ddbff;
+   
+      border: 1px solid #000000;
+   
+      margin: 3;
+   
+      /*opacity: 0.8;*/
+   
+   }
+
+   
+   .title {
+   
+      visibility: visible;
+   
+      color: #068ada;
+   
+      background-color: #9ddbff;
+   
+      border-top: 1px solid #068ada;
+   
+   }
+
+   
+   div.thumbnail:hover .title, .hover .title {
+   
+      visibility: visible;
+   
+      color: #000000;
+   
+      background-color: #068ada;
+   
+      border-top: 1px solid #000000;
+   
+   }
+
+   
+   .title img {
+   
+      display: inline;
+   
+   }
+
+   
+   div.thumbnail:hover .title img, .hover .title img {
+   
+      display: inline;
+   
+   }
+
