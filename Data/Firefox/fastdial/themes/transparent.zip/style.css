@@ -6,7 +6,8 @@
   border: 1px solid transparent;
 }
 
-div.thumbnail:hover, .hover {
+div.box:hover .thumbnail, .hover .thumbnail {
+  border: 1px solid transparent;
   margin: 0px;
 }
 
@@ -16,7 +17,7 @@ div.thumbnail:hover, .hover {
   visibility: hidden;
 }
 
-div.thumbnail:hover .title, .hover .title {
+div.box:hover .title, .hover .title {
   background: transparent;
   visibility: visible;
 }

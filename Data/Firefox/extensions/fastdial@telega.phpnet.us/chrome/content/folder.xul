@@ -6,7 +6,7 @@
 <?xul-overlay href="chrome://browser/content/places/placesOverlay.xul"?>
 <!DOCTYPE dialog SYSTEM "chrome://fastdial/locale/fastdial.dtd">
 
-<dialog id="folder"
+<dialog id="fd-dialog-folder"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         ondialogaccept="return onAccept(event);"
         title="&folder;"
@@ -27,21 +27,13 @@
         <treechildren id="placesListChildren"
                       view="placesList" flex="1"/>
       </tree>
+      <vbox>
+        <button label="&newFolder;" oncommand="newFolder();"/>
+      </vbox>
     </hbox>
 
-    <script>
-        <![CDATA[
-            function initialize() {
-                var tree = document.getElementById("foldersTree");
-                tree.place =
-                    "place:excludeItems=1&excludeQueries=1&excludeReadOnlyFolders=1&folder=" +
-                    PlacesUIUtils.allBookmarksFolderId;
-            }
-
-            function onAccept() {
-                var tree = document.getElementById("foldersTree");
-                window.arguments[0].folderId = PlacesUtils.getConcreteItemId(tree.selectedNode);
-            }
-        ]]>
-    </script>
+    <script src="utils.js"/>
+    <script src="bookmark.js"/>
+    <script src="storage.js"/>
+    <script src="folder.js"/>
 </dialog>

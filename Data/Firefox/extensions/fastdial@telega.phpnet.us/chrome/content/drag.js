@@ -1,4 +1,4 @@
-var FdDrag = new function() {
+fastdial.Drag = new function() {
     const MIN_DRAG = 10;
     var click, delta;
     var source, object;
@@ -49,10 +49,9 @@ var FdDrag = new function() {
     function onMouseUp(e) {
         if (object) {
             var event = document.createEvent("MouseEvents");
-            event.initMouseEvent("dragdrop", e.bubbles, e.cancelable, e.view, e.detail,
+            event.initMouseEvent("drop", e.bubbles, e.cancelable, e.view, e.detail,
                     e.screenX, e.screenY, e.clientX, e.clientY,
                     e.ctrlKey, e.altKey, e.shiftKey, e.metaKey, e.button, null);
-            event.initEvent("drop", true, true);
             document.dispatchEvent(event);
         }
         stop();
@@ -80,7 +79,7 @@ var FdDrag = new function() {
 
     function stop() {
         if (object) {
-            FdDom.remove(object);
+            fastdial.Dom.remove(object);
             object = null;
         }
         if (source) {
