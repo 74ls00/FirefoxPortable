@@ -1,78 +1,113 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document url("chrome://fastdial/content/fastdial.html") {
 /**
-* @title Opera Speed Dial
+* @title Зелёная
 */
+
+
 body {
-	background: -moz-linear-gradient(100% 100% 90deg,#DCDCDC, #FDFDFD) ;
-	font-family: "Tahoma" ;
-	font-size: 11px ;
-	height:100% ;
-	padding:0 ;
+
+background-image: none;
+
+background-repeat: repeat;
+
+background-position: top left;
+
+background-size: auto;
+
+font-family: 'Tahoma';
+
+font-size: 11px;
+
+background-color: #16a600;
+
 }
 
-#layout {
-	height: 100% ;
-}
 
 .back {
-	background-image: url(chrome://fastdial/skin/images/back.png) ;
+
+background-image: url(chrome://fastdial/skin/images/back.png);
+
 }
+
 
 .search-input {
-	background-image: none ;
-	color: #000000 ;
-	background-color: #fff ;
-	border: 1px solid transparent ;
+
+background-image: none;
+
+color: #000000;
+
+background-color: transparent;
+
+border: 1px solid #d3d3d3;
+
 }
+
 
 .thumbnail {
-	background: #fff ;
-	border: 1px solid #949494 ;
-	-moz-border-radius:5px ;
-	-moz-box-shadow: 0px 0px 10px -2px #535353 ;
-	margin: 8px ;
-	opacity: .9 ;
+
+background-color: transparent;
+
+border: 1px solid #333333;
+
+margin: 4px;
+
+opacity: 1;
+
+border-radius: 3px;
+
+box-shadow: none;
+
 }
+
 
 div.thumbnail:hover, .hover {
-	border-color: #535353 ;
-	margin: 8px ;
-	opacity: 1 ;
+
+background-color: transparent;
+
+border: 1px solid #ff0000;
+
+margin: 4px;
+
+opacity: 1;
+
+border-radius: 3px;
+
+box-shadow: none;
+
 }
 
-.body {
-	margin:4px ;
-}
-	
-	.image {
-		outline:3px solid white ;
-		outline-offset:-1px ;
-		-moz-outline-radius:7px ;
-	}
 
 .title {
-	visibility: visible ;
-	color: #444 ;
-	background: transparent;
-	border:0 ;
-	bottom:3px ;
-	font-family: Tahoma ;
-	font-size:10pt ;
-	
+
+color: #000000;
+
+background-color: #eeeeee;
+
+border-top: 1px solid #d3d3d3;
+
 }
-	.title img {
-		display: inline ;
-	}
+
 
 div.thumbnail:hover .title, .hover .title {
-	visibility: visible ;
-	color: #000 ;
+
+color: #000000;
+
+background-color: #e8e8e8;
+
+border-top: 1px solid #d3d3d3;
+
 }
+
+
+.title img {
+
+display: inline;
+
+}
+
 
 div.thumbnail:hover .title img, .hover .title img {
-	display: inline ;
-}
+
+display: inline;
 
 }
+
