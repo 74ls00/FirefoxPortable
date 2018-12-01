@@ -14,10 +14,20 @@
 /*браузер*/
 /*user_pref("general.useragent.overridepreference", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586");*/
 
+/*убрать в форме пароля это сообщение не защищено*/
+user_pref("security.insecure_field_warning.contextual.enabled", false);
+user_pref("security.insecure_password.ui.enabled", false);
+user_pref("signon.autofillForms.http", true);
+
+/*отключить блокировку скачаных файлов*/
+user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+
 
 /*!DEBUG*/
 user_pref("view_source.editor.external", true);
-user_pref("view_source.editor.path", "G:\\Programs\\portableapps.com\\PortableApps\\Notepad++Portable\\Notepad++Portable.exe");
+user_pref("view_source.editor.path", "G:\\Program Files\\Notepad++\\notepad++.exe");
 user_pref("xpinstall.signatures.required", false);/*разрешить неподписанные дополнения*/
 /*END Debug*/
 
@@ -86,7 +96,7 @@ user_pref("browser.startup.homepage_override.mstone", "rv:25.7.0");
 /*END PaleMoon Portable*/
 
 /*browser.uiCustomization.state настройки интерфейса*/
-//user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"privatebrowsing-button\",\"home-button\",\"print-button\",\"history-panelmenu\",\"fullscreen-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\"],\"status4evar-status-bar\":[\"abp-toolbarbutton\",\"status4evar-status-widget\",\"status4evar-download-button\",\"status4evar-progress-widget\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"tabmixScrollBox\",\"alltabs-button\",\"new-tab-button\",\"custombuttons-button2\",\"tabs-closebutton\"],\"nav-bar\":[\"save-page-button\",\"find-button\",\"ctr_back-forward-button\",\"ctr_stop-button\",\"ctr_reload-button\",\"secureLoginButton\",\"ilo-toolbar-button\",\"urlbar-container\",\"reload-button\",\"stop-button\",\"search-container\",\"webrtc-status-button\",\"social-share-button\",\"ctr_panelui-button\",\"ctr_statusbar\",\"bookmarks-menu-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"],\"ctr_addon-bar\":[\"ctr_addonbar-close\",\"custombuttons-button1\",\"fd-button\",\"customizableui-special-spring1\",\"status4evar-legacy-widget\"],\"aios-toolbar\":[\"bookmarks-button\",\"scrapbook-button\",\"history-button\",\"customizableui-special-separator3\",\"downloads-button\",\"addons-button\",\"customizableui-special-separator4\",\"pageinfo-button\",\"customizableui-special-spring13\",\"disallowscriptbtn-key-dot\",\"custombuttons-button0\"],\"ctr_extra-bar\":[\"customizableui-special-spring2\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\"],\"aios-sbhtoolbar\":[\"autohide-button\",\"paneltab-button\",\"sidebarclose-button\"]},\"seen\":[\"status4evar-legacy-widget\",\"abp-toolbarbutton\"],\"dirtyAreaCache\":[\"status4evar-status-bar\",\"toolbar-menubar\",\"TabsToolbar\",\"PanelUI-contents\",\"nav-bar\",\"PersonalToolbar\",\"ctr_addon-bar\",\"aios-toolbar\",\"ctr_extra-bar\",\"addon-bar\",\"aios-sbhtoolbar\"],\"newElementCount\":25}");
+
 
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"privatebrowsing-button\",\"home-button\",\"print-button\",\"history-panelmenu\",\"fullscreen-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\"],\"status4evar-status-bar\":[\"abp-toolbarbutton\",\"action-button--ichmaltegoetzde-proxtube-onoff\",\"toggle-button--helpersavefromnet-sf-menu_button\",\"https-everywhere-button\",\"status4evar-status-widget\",\"status4evar-download-button\",\"status4evar-progress-widget\",\"status4evar-legacy-widget\"],\"toolbar-menubar\":[\"menubar-items\"],\"nav-bar\":[\"save-page-button\",\"find-button\",\"ctraddon_reload-button\",\"ctr_back-forward-button\",\"ctr_stop-button\",\"ctr_reload-button\",\"secureLoginButton\",\"ilo-toolbar-button\",\"urlbar-container\",\"reload-button\",\"stop-button\",\"search-container\",\"webrtc-status-button\",\"ctr_panelui-button\",\"ctr_statusbar\",\"ctraddon_appbutton\",\"ctraddon_puib_separator\",\"ctraddon_panelui-button\",\"bookmarks-menu-button\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\",\"custombuttons-button2\",\"tabmix-tabs-closebutton\",\"ctraddon_tabs-closebutton\"],\"PersonalToolbar\":[\"personal-bookmarks\",\"ctraddon_bookmarks-menu-toolbar-button\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\"],\"ctraddon_addon-bar\":[\"ctraddon_addonbar-close\",\"custombuttons-button1\",\"fd-button\",\"customizableui-special-spring26\",\"ctraddon_statusbar\"],\"aios-toolbar\":[\"bookmarks-button\",\"scrapbook-button\",\"history-button\",\"customizableui-special-separator3\",\"downloads-button\",\"addons-button\",\"customizableui-special-separator4\",\"pageinfo-button\",\"customizableui-special-spring13\",\"disallowscriptbtn-key-dot\",\"custombuttons-button0\"],\"ctraddon_extra-bar\":[\"customizableui-special-spring29\"],\"aios-sbhtoolbar\":[\"autohide-button\",\"paneltab-button\",\"sidebarclose-button\"],\"ctr_addon-bar\":[\"ctr_addonbar-close\",\"custombuttons-button1\",\"fd-button\",\"customizableui-special-spring1\",\"status4evar-legacy-widget\"],\"ctr_extra-bar\":[\"customizableui-special-spring2\"]},\"seen\":[\"status4evar-legacy-widget\",\"abp-toolbarbutton\",\"action-button--ichmaltegoetzde-proxtube-onoff\",\"toggle-button--helpersavefromnet-sf-menu_button\"],\"dirtyAreaCache\":[\"status4evar-status-bar\",\"toolbar-menubar\",\"TabsToolbar\",\"PanelUI-contents\",\"nav-bar\",\"PersonalToolbar\",\"ctr_addon-bar\",\"aios-toolbar\",\"ctr_extra-bar\",\"addon-bar\",\"aios-sbhtoolbar\",\"ctraddon_addon-bar\",\"ctraddon_extra-bar\"],\"currentVersion\":4,\"newElementCount\":41}");
 
