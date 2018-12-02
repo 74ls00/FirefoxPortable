@@ -3,3 +3,6 @@
 /SecurityPreloadState.txt
 /SiteSecurityServiceState.txt
 /weave
+/Telemetry.FailedProfileLocks.txt
+/mimeTypes.rdf
+/search-metadata.json

@@ -24,6 +24,10 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
+/*отключить всплывающие уведомления*/
+user_pref("dom.push.enabled", false);
+user_pref("dom.webnotifications.enabled", false);
+
 
 /*!DEBUG*/
 user_pref("view_source.editor.external", true);
