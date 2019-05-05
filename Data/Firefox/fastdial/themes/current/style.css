@@ -1,113 +1,60 @@
 /**
 * @title Зелёная
 */
-
-
 body {
-
-background-image: none;
-
-background-repeat: repeat;
-
-background-position: top left;
-
-background-size: auto;
-
-font-family: 'Tahoma';
-
-font-size: 11px;
-
-background-color: #16a600;
-
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Tahoma';
+  font-size: 11px;
+  background-color: #16a600;
 }
-
-
 .back {
-
-background-image: url(chrome://fastdial/skin/images/back.png);
-
+  background-image: url(chrome://fastdial/skin/images/back.png);
 }
-
-
 .search-input {
-
-background-image: none;
-
-color: #000000;
-
-background-color: transparent;
-
-border: 1px solid #d3d3d3;
-
+  font-family: 'Tahoma';
+  font-size: 13px;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
 }
-
-
+table.suggestion {
+  font-family: 'Tahoma';
+  font-size: 13px;
+}
 .thumbnail {
-
-background-color: transparent;
-
-border: 1px solid #333333;
-
-margin: 4px;
-
-opacity: 1;
-
-border-radius: 3px;
-
-box-shadow: none;
-
+  background-color: transparent;
+  border: 1px solid #333333;
+  margin: 4px;
+  opacity: 1;
+  border-radius: 3px;
+  box-shadow: none;
 }
-
-
-div.thumbnail:hover, .hover {
-
-background-color: transparent;
-
-border: 1px solid #ff0000;
-
-margin: 4px;
-
-opacity: 1;
-
-border-radius: 3px;
-
-box-shadow: none;
-
+div.box:hover .thumbnail, .hover .thumbnail {
+  background-color: transparent;
+  border: 1px solid #a9a9a9;
+  margin: 4px;
+  opacity: 1;
+  border-radius: 3px;
+  box-shadow: none;
 }
-
-
 .title {
-
-color: #000000;
-
-background-color: #eeeeee;
-
-border-top: 1px solid #d3d3d3;
-
+  color: #000000;
+  visibility: inherit;
+  background-color: #eeeeee;
+  border-top: 1px solid #d3d3d3;
 }
-
-
-div.thumbnail:hover .title, .hover .title {
-
-color: #000000;
-
-background-color: #e8e8e8;
-
-border-top: 1px solid #d3d3d3;
-
+div.box:hover .title, .hover .title {
+  color: #000000;
+  visibility: inherit;
+  background-color: #e8e8e8;
+  border-top: 1px solid #d3d3d3;
 }
-
-
 .title img {
-
-display: inline;
-
+  display: inline;
 }
-
-
-div.thumbnail:hover .title img, .hover .title img {
-
-display: inline;
-
+div.box:hover .title img, .hover .title img {
+  display: inline;
 }
-
