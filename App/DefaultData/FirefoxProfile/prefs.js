@@ -14,6 +14,9 @@
 /*браузер*/
 /*user_pref("general.useragent.overridepreference", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586");*/
 
+/*отключить смену папок при сохранении*/
+user_pref("browser.download.lastDir.savePerSite", false);
+
 /*убрать в форме пароля это сообщение не защищено*/
 user_pref("security.insecure_field_warning.contextual.enabled", false);
 user_pref("security.insecure_password.ui.enabled", false);
