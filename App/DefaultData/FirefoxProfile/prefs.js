@@ -344,3 +344,5 @@ user_pref("extensions.undoclosedtabsbutton.firstRun", false);
 
 /*Поиск похожих изображений с помощи google.ru 0.0.1*/
 /*END Поиск похожих изображений с помощи google.ru 0.0.1*/
+
+/*security.enterprise_roots.enabled*/

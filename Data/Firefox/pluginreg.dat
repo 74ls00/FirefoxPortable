@@ -5,19 +5,17 @@ Version|0.18t|$
 Arch|x86_64-msvc|$
 
 [PLUGINS]
-NPSWF64_30_0_0_154.dll|$
-C:\Windows\system32\Macromed\Flash\NPSWF64_30_0_0_154.dll|$
-30.0.0.154|$
-1535878197026|0|0|0|$
-Shockwave Flash 30.0 r0|$
+NPSWF64_32_0_0_192.dll|$
+C:\Windows\system32\Macromed\Flash\NPSWF64_32_0_0_192.dll|$
+32.0.0.192|$
+1559861242750|0|0|0|$
+Shockwave Flash 32.0 r0|$
 Shockwave Flash|$
 2
 0|application/x-shockwave-flash|Adobe Flash movie|swf|$
 1|application/futuresplash|FutureSplash movie|spl|$
 
 [INVALID]
-T:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\npFoxitReaderPlugin.dll|$
-1531791572000|$
 C:\Program Files\Java\jre1.8.0_73\bin\plugin2\npjp2.dll|$
 1535039738902|$
 C:\Program Files\Java\jre1.8.0_73\bin\dtplugin\npdeployJava1.dll|$
